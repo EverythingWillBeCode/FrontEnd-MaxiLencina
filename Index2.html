@@ -108,6 +108,25 @@
     <h2>Experiencia</h2>
     <p>Profesor particular en las materias Matemática (nivel secundario) y física (nivel secundario) desde el año 2010 hasta el 2019.<br>
        Cajero en mini mercado "La Argentina" desde el año 2004 hasta el 2009.</p>
+       
+       <script> function cambiar_exp()
+        {
+         document.getElementById("edit-exp").style.display="block";
+         let texto = document.getElementById("text-exp").innerText;
+         console.log(texto);
+       } </script>
+ 
+        <div class="btn-edit" onclick="cambiar_exp()">
+         <a class="btn-right"  href="#" >
+           <img src="edit.png" class="img-edit" width="32" height="26">
+           <i class="fa fa-pen"></i>
+         </a>
+        </div>
+        
+        <div>
+         <input id="edit-exp" type="text" oninput="myfunction2(this.value)" style="display:none">
+       </div>
+     </div>
     </div>
 
 
