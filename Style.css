@@ -19,6 +19,12 @@
     height: auto;
 }
 
+.img-edit
+{
+    margin-top: -15%;
+    margin-left: 95%; 
+}
+
 h1
 {
     color:black;

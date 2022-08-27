@@ -10,7 +10,7 @@
 </head>
 
 <body>
-      <nav class="navbar sticky-top border border-dark border-3 bg-success">
+  <nav class="navbar sticky-top border border-dark border-3 bg-success">
         <div class="container-fluid">
           <a class="navbar-brand" href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">
               <img src="argentina-programa.jpg" alt="" width="60" height="35" class="d-inline-block align-text-top">
@@ -74,12 +74,34 @@
     </div>
     
 
+    
+
     <div class="alert alert-success border border-dark border-3 rounded-4" role="alert">
-    <h2>Acerca de mi</h2>
-    <p>Soy de Paraná, Entre Ríos, Argentina.<br>  
+      <h2>Acerca de mi</h2>
+     <p id="text-acercademi">Soy de Paraná, Entre Ríos, Argentina.<br>  
        Me considero una persona responsable, ordenada, creativa, de rápido aprendizaje y con muchas ganas de progresar.<br>
        Actualmente estoy en busca de un trabajo donde pueda ampliar mis conocimientos de programación.</p>
+ 
+       <script> function cambiar_parrafo()
+       {
+        document.getElementById("edit-acercademi").style.display="block";
+        let texto = document.getElementById("text-acercademi").innerText;
+        console.log(texto);
+      } </script>
+
+       <div class="btn-edit" onclick="cambiar_parrafo()">
+        <a class="btn-right"  href="#" >
+          <img src="edit.png" class="img-edit" width="32" height="26">
+          <i class="fa fa-pen"></i>
+        </a>
+       </div>
+       
+       <div>
+        <input id="edit-acercademi" type="text" oninput="myfunction2(this.value)" style="display:none">
+      </div>
     </div>
+
+   
 
 
     <div class="alert alert-success border border-dark border-3 rounded-4" role="alert">
