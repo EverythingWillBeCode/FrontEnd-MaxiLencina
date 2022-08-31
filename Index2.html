@@ -37,31 +37,42 @@
        
     
 
-    <div class="alert alert-success border border-dark border-3 rounded-4" role="alert">
+  <div class="alert alert-success border border-dark border-3 rounded-4" role="alert">
     <img src="portada.jpg" class ="img-fluid border border-dark border-3 rounded-4" alt="portada">
     <p></p>
     <img src="perfil.jpg" class= "img-thumbnail border border-dark border-3 rounded-pill" alt="perfil">
     
     <div class="container px-0 text-right">
       <div class="row justify-content-md-right">
-        <div class="col-md-auto">
+        <div class="col-md-auto">    
 
     <h1 id="text-nombre">Maximiliano Lencina</h1>
 
   </div>
+  
+  <div class="col-md-auto">
+    <div class="btn-eliminar" onclick="eliminar()">
+      <a class="btn-right"  href="#" >
+        <img src="eliminar.png" class="img-eliminar" width="24" height="18">
+     </a>
+     </div>
+    </div>
+   
     <div class="col-md-auto">
       <div class="btn-edit" onclick="cambiar_nombre()">
         <a class="btn-right"  href="#">    
-            <img src="edit.png" class="img-edit" width="28" height="22">
+            <img src="edit.png" class="img-edit" width="24" height="18">
           </a>
-         </div>
-        </div>
       </div>
+    </div>
+    </div>
+    
         <div>
           <input id="edit-nombre" type="text" oninput="myfunction(this.value)" style="display:none">
         </div>
-      </div>
+  </div>
   
+     
 <div class="container px-0 text-right">
   <div class="row justify-content-md-right">
  <div class="col-md-auto">
@@ -70,9 +81,17 @@
 </div>
 
 <div class="col-md-auto">
+  <div class="btn-eliminar" onclick="eliminar()">
+    <a class="btn-right"  href="#" >
+      <img src="eliminar.png" class="img-eliminar1" width="24" height="18">
+   </a>
+   </div>
+  </div>
+
+<div class="col-md-auto">
   <div class="btn-edit" onclick="cambiar_titulo()">
     <a class="btn-right"  href="#">    
-        <img src="edit.png" class="img-edit1" width="28" height="22">
+        <img src="edit.png" class="img-edit1" width="24" height="18">
       </a>
      </div>
     </div>
@@ -83,23 +102,73 @@
     </div>
   </div> 
 
-
-   
-
-
     <div class="alert alert-success border border-dark border-3 rounded-4" role="alert">
     <h2>Acerca de mi</h2>
-    <p>Soy de Paraná, Entre Ríos, Argentina.<br>  
+    
+    <div class="container px-0 text-right">
+      <div class="row justify-content-md-right">
+     <div class="col-md-auto">
+    
+    <p id="text-acercademi">Soy de Paraná, Entre Ríos, Argentina.<br>  
        Me considero una persona responsable, ordenada, creativa, de rápido aprendizaje y con muchas ganas de progresar.<br>
        Actualmente estoy en busca de un trabajo donde pueda ampliar mis conocimientos de programación.</p>
+  </div>
+
+  <div class="col-md-auto">
+    <div class="btn-eliminar" onclick="eliminar()">
+      <a class="btn-right"  href="#" >
+        <img src="eliminar.png" class="img-eliminar2" width="24" height="18">
+     </a>
+     </div>
+    </div>
+  
+  <div class="col-md-auto">
+    <div class="btn-edit" onclick="cambiar_acercademi()">
+      <a class="btn-right"  href="#">    
+          <img src="edit.png" class="img-edit2" width="24" height="18">
+        </a>
+       </div>
+      </div>
+    </div>
+       <div>
+        <input id="edit-acercademi" type="text" oninput="myfunction2(this.value)" style="display:none">
+      </div>
+      </div>
     </div>
 
 
     <div class="alert alert-success border border-dark border-3 rounded-4" role="alert">
     <h2>Experiencia</h2>
-    <p>Profesor particular en las materias Matemática (nivel secundario) y física (nivel secundario) desde el año 2010 hasta el 2019.<br>
+
+    <div class="container px-0 text-right">
+      <div class="row justify-content-md-right">
+     <div class="col-md-auto">
+
+    <p id="text-exp">Profesor particular en las materias Matemática (nivel secundario) y física (nivel secundario) desde el año 2010 hasta el 2019.<br>
        Cajero en mini mercado "La Argentina" desde el año 2004 hasta el 2009.</p>
     </div>
+
+    <div class="col-md-auto">
+      <div class="btn-eliminar" onclick="eliminar()">
+        <a class="btn-right"  href="#" >
+          <img src="eliminar.png" class="img-eliminar3" width="24" height="18">
+       </a>
+       </div>
+      </div>
+    
+    <div class="col-md-auto">
+      <div class="btn-edit" onclick="cambiar_exp()">
+        <a class="btn-right"  href="#">    
+            <img src="edit.png" class="img-edit3" width="24" height="18">
+          </a>
+         </div>
+        </div>
+      </div>
+         <div>
+          <input id="edit-exp" type="text" oninput="myfunction3(this.value)" style="display:none">
+        </div>
+        </div>
+      </div>
 
 
     <div class="alert alert-success border border-dark border-3 rounded-4" role="alert">
@@ -268,13 +337,68 @@
 
     <div class="alert alert-success border border-dark border-3 rounded-4" role="alert">
     <h2>Proyectos</h2>
-    <h3>Portfolio Web</h3>
-    <p>Fecha de realización: Junio 2022 - Enero 2023<br>
+
+    <div class="container px-0 text-right">
+        <div class="row justify-content-md-right">
+       <div class="col-md-auto">
+
+    <h3 id="text-nombreproyecto">Portfolio Web</h3>
+
+    <div class="col-md-auto">
+      <div class="btn-eliminar" onclick="eliminar()">
+        <a class="btn-right"  href="#" >
+          <img src="eliminar.png" class="img-eliminar3" width="24" height="18">
+       </a>
+       </div>
+      </div>
+    
+    <div class="col-md-auto">
+      <div class="btn-edit" onclick="cambiar_nombreproyecto()">
+        <a class="btn-right"  href="#">    
+            <img src="edit.png" class="img-edit3" width="24" height="18">
+          </a>
+         </div>
+        </div>
+      </div>
+         <div>
+          <input id="edit-nombreproyecto" type="text" oninput="myfunction4(this.value)" style="display:none">
+        </div>
+        </div>
+      </div>
+
+      <div class="container px-0 text-right">
+        <div class="row justify-content-md-right">
+       <div class="col-md-auto">
+
+    <p id="text-descrproyecto">Fecha de realización: Junio 2022 - Enero 2023<br>
        Descripción: Mi primer proyecto de programación, es para <strong>#YoProgramo</strong>, la segunda etapa de <strong>Argentina Programa</strong>, el objetivo era 
        crear mi propio portfolio web, esta aplicación debia ser de arquitectura distribuida y contener un diseño de interfaz de usuario (front end)
        que muestre la información, una base de datos que almacene los datos antes mencionados y debia contar con las APIs necesarias para proveer a través
        de internet la información (back end).</p> 
     </div>
+
+    <div class="col-md-auto">
+      <div class="btn-eliminar" onclick="eliminar()">
+        <a class="btn-right"  href="#" >
+          <img src="eliminar.png" class="img-eliminar3" width="24" height="18">
+       </a>
+       </div>
+      </div>
+    
+    <div class="col-md-auto">
+      <div class="btn-edit" onclick="cambiar_descrproyecto()">
+        <a class="btn-right"  href="#">    
+            <img src="edit.png" class="img-edit3" width="24" height="18">
+          </a>
+         </div>
+        </div>
+      </div>
+         <div>
+          <input id="edit-descrproyecto" type="text" oninput="myfunction5(this.value)" style="display:none">
+        </div>
+        </div>
+      </div>
+
     <nav class="navbar border border-dark border-3 bg-success">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -294,8 +418,7 @@ function cambiar_nombre()
        let texto = document.getElementById("text-nombre").innerText;
        console.log(texto);
       };
-
-      function myfunction(valor)
+       function myfunction(valor)
       {
        document.getElementById("text-nombre").innerText=valor;
       };
@@ -338,7 +461,105 @@ function cambiar_titulo()
       }
       });
 
+function cambiar_acercademi()
+      {
+       document.getElementById("edit-acercademi").style.display="block";
+       let texto = document.getElementById("text-acercademi").innerText;
+       console.log(texto);
+      };
 
+      function myfunction2(valor)
+      {
+       document.getElementById("text-acercademi").innerText=valor;
+      };
+
+      function logMessage2(message2)
+      {
+       console.log(message2 + "<br>");
+      };
+
+      let textarea2=document.getElementById("edit-acercademi")
+      textarea2.addEventListener('keyup' , (e) => {
+       logMessage2('key "$ {e.key}" release [event: keyup]');
+       if (e.key=="Enter"){
+       document.getElementById("edit-acercademi").style.display="none"
+      }
+      });
+
+function cambiar_exp()
+      {
+       document.getElementById("edit-exp").style.display="block";
+       let texto = document.getElementById("text-exp").innerText;
+       console.log(texto);
+      };
+
+      function myfunction3(valor)
+      {
+       document.getElementById("text-exp").innerText=valor;
+      };
+
+      function logMessage3(message3)
+      {
+       console.log(message3 + "<br>");
+      };
+
+      let textarea3=document.getElementById("edit-exp")
+      textarea3.addEventListener('keyup' , (e) => {
+       logMessage3('key "$ {e.key}" release [event: keyup]');
+       if (e.key=="Enter"){
+       document.getElementById("edit-exp").style.display="none"
+      }
+      });   
+      
+function cambiar_nombreproyecto()
+      {
+       document.getElementById("edit-nombreproyecto").style.display="block";
+       let texto = document.getElementById("text-nombreproyecto").innerText;
+       console.log(texto);
+      };
+
+      function myfunction4(valor)
+      {
+       document.getElementById("text-nombreproyecto").innerText=valor;
+      };
+
+      function logMessage4(message4)
+      {
+       console.log(message4 + "<br>");
+      };
+
+      let textarea4=document.getElementById("edit-nombreproyecto")
+      textarea4.addEventListener('keyup' , (e) => {
+       logMessage4('key "$ {e.key}" release [event: keyup]');
+       if (e.key=="Enter"){
+       document.getElementById("edit-nombreproyecto").style.display="none"
+      }
+      }); 
+
+function cambiar_descrproyecto()
+      {
+       document.getElementById("edit-descrproyecto").style.display="block";
+       let texto = document.getElementById("text-descrproyecto").innerText;
+       console.log(texto);
+      };
+
+      function myfunction5(valor)
+      {
+       document.getElementById("text-descrproyecto").innerText=valor;
+      };
+
+      function logMessage5(message5)
+      {
+       console.log(message5 + "<br>");
+      };
+
+      let textarea5=document.getElementById("edit-descrproyecto")
+      textarea5.addEventListener('keyup' , (e) => {
+       logMessage5('key "$ {e.key}" release [event: keyup]');
+       if (e.key=="Enter"){
+       document.getElementById("edit-descrproyecto").style.display="none"
+      }
+      });
 
 
    </script>
