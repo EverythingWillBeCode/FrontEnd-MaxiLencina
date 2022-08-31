@@ -19,37 +19,17 @@
     height: auto;
 }
 
+.img-edit
+{
+    margin-top:  60%;
+    margin-left: 00%;  
+}
+
 .img-edit1
 {
-    margin-top: 80%;
-    margin-left: 180%;  
-}
-
-.img-edit2
-{
-    margin-top: 60%;
-    margin-left: 20%;  
-}
-
-
-.img-edit3
-{
     margin-top: -20%;
     margin-left: 20%;  
 }
-
-.img-edit4
-{
-    margin-top: -20%;
-    margin-left: 10%; 
-}
-.img-edit5
-{
-    margin-top:  10%;
-    margin-left: 25%; 
-}
-
-
 
 h1
 {
